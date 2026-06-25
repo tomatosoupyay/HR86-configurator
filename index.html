@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR8.6 Configurator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" id="logo">
+
+    <div>
+        <h1>HR8.6 Build And Price</h1>
+        <p id="headerPrice">$18,000</p>
+    </div>
+</header>
+
+<h2>Hoshizora HR8.6 Configurator</h2>
+
+<div class="main-layout">
+
+    <div class="viewer">
+        <img id="carImage" src="images/exterior/blue.jpg" alt="HR8.6">
+    </div>
+
+    <div class="options">
+        <div class="config-section">
+            <h1>Trim</h1>
+            
+            <button onclick="setTrim('base')">Base +$18,000</button>
+            <button onclick="setTrim('cascade')">Cascade +$19,500</button>
+            <button onclick="setTrim('camping')">Camping +$19,000</button>
+            <!-- <button onclick="setTrim('rally')">Rally +$20,000</button> -->
+            <h1>Transmission</h1>
+            <button onclick="setTrans('manual')">Manual</button>
+            <button onclick="setTrans('automatic')">Automatic +$500</button>
+            <h2>Color</h2>
+            <div id="colorButtons"></div>
+            <h2>Equipment</h2>
+            <button onclick="addEquip('frontplatebracket')">Front Plate Bracket +$1000</button>
+            <button onclick="addEquip('firstaid')">First Aid Kit +$100</button>
+            <h2>Final Drive</h2>
+            <button onclick="setFinalDrive('shortfinaldrive')">Shorter Final Drive (1:1) +$200</button>
+            <button onclick="setFinalDrive('standardfinaldrive')">Standard Final Drive (1.2:1)</button>
+            <h2>Market Compliance</h2>
+            <button onclick="setMarket('Europe27')">Europe-2027 Onward +$5000</button>
+            <button onclick="setMarket('UKDM')">Great Britain (Scotland, UK, Ireland) +$1000</button>
+            <button onclick="setMarket('AUDM')">Australia +$1000</button>
+            <button onclick="setMarket('JDM')">Japan +$1000</button>
+            <button onclick="setMarket('EUDM')">Europe +$200</button>
+            <button onclick="setMarket('USDM-F')">United States (Fahrenheit) +$2000</button>
+            <button onclick="setMarket('TMS')">TomatoMarket-Special (best) +$500</button>
+            <h2>Build Summary</h2>
+            <p id="selectedTrim">
+                Trim: Base
+            </p>
+            <p id="selectedTrans">
+                Transmission: Manual
+            </p>
+            <p id="selectedColor">
+                Color: White
+            </p>
+            <p id="selectedFinalDrive">
+                Final Drive: Standard (1.2:1)
+            </p>
+            <p id="selectedTire">
+                Tire: All-Round
+            </p>
+            <p id="selectedMarket">
+                Market: Canada
+            </p>
+            <h3>Option Breakdown</h3>
+            <div id="optionBreakdown"></div>
+            <p id="summaryPrice">
+                Sale Price: $18,000
+            </p>
+
+        <p id="tax">
+            Tax And Regi: $0 (we own the government)
+        </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>>
