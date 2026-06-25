@@ -1,0 +1,51 @@
+body {
+    max-width: 1400px;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+
+    height: calc(100vh - 140px);
+}
+
+.viewer {
+    width: 100%;
+}
+
+.options {
+    overflow-y: auto;
+    height: 100%;
+}
+
+#carImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.config-section {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+button {
+    margin: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
